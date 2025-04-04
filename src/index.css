@@ -1,0 +1,364 @@
+/* google font */
+@import url('https://fonts.googleapis.com//css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  gap: 100px;
+}
+.studygroup-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.studygroup-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.studygroup-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.studygroup-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new studygroup form*/
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #Ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+/* Ensure the header takes full width and height */
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f4f4f4; /* Light background color */
+  position: relative; /* Allows positioning of navbar inside */
+}
+
+/* Container to align content */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Space out content */
+  height: 100%; /* Fill the available space */
+}
+
+/* Navbar at the bottom of the header */
+.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333; /* Dark background for navbar */
+}
+.navbar ul {
+  display: flex;
+  justify-content: space-around; /* Distribute links evenly */
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #f4f4f4; /* Hover effect for links */
+}
+/* Footer */
+footer {
+  background-color: #333; /* Dark background color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center align text and links */
+}
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+footer nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+footer nav li {
+  margin: 0 15px;
+}
+footer nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer nav a:hover {
+  color: #f4f4f4; /* Hover effect for links */
+}
+/* General Page Styling */
+.groups-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+/* Calendar Section */
+.calendar-section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+/* Calendar Wrapper */
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/* Custom Calendar */
+.custom-calendar {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: white;
+}
+.react-calendar {
+  width: 100%;
+  max-width: 350px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ddd;
+}
+/* Calendar Navigation */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  background: #4CAF50;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+.react-calendar__navigation button {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* Calendar Weekdays */
+.react-calendar__month-view__weekdays {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+/* Calendar Tiles */
+.react-calendar__tile {
+  padding: 12px;
+  border-radius: 6px;
+  transition: 0.3s ease-in-out;
+}
+.react-calendar__tile:hover {
+  background: #e8f5e9;
+}
+.react-calendar__tile--active {
+  background: #4CAF50 !important;
+  color: white !important;
+  font-weight: bold;
+}
+/* Selected Dates Section */
+.selected-dates {
+  margin-top: 30px;
+}
+.selected-dates ul {
+  list-style-type: none;
+  padding: 0;
+}
+.selected-dates li {
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #1aac83;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #388E3C;
+}
+/* Groups page*/
+.table-section {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Chat */
+.chat-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.message {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+.sent {
+  background-color: #d1e7dd;
+  text-align: right;
+}
+.received {
+  background-color: #f8d7da;
+  text-align: left;
+}
+.chat-input {
+  display: flex;
+  gap: 5px;
+}
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+}
+.chat-input button {
+  padding: 5px 10px;
+}
+.message.received strong {
+  color: blue;
+}
+
+.message.sent strong {
+  color: green;
+}
+
+.message-bot {
+  background: #f4f4f4;
+  font-style: italic;
+  color: #333;
+}
